@@ -1,0 +1,55 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC := clang$/;"	m
+CFLAGS	Makefile	/^CFLAGS := $(CFLAGS) -Wall -Werror -Wextra $(HEADERFLAGS) $(LIBFLAGS)$/;"	m
+FILENAMES	Makefile	/^FILENAMES := main ft_mlx_input$/;"	m
+FT_MLX_H	ft_mlx.h	2;"	d
+HEADERDIRS	Makefile	/^HEADERDIRS := . $(LIBDIRS)$/;"	m
+HEADERFLAGS	Makefile	/^HEADERFLAGS := $(addprefix -I,$(HEADERDIRS))$/;"	m
+LIBDIRS	Makefile	/^LIBDIRS := ..\/mlx\/$/;"	m
+LIBFLAGS	Makefile	/^LIBFLAGS := $(addprefix -L,$(LIBDIRS)) $(addprefix -l,$(LIBS))$/;"	m
+LIBS	Makefile	/^LIBS := mlx Xext X11$/;"	m
+NAME	Makefile	/^NAME := test_input$/;"	m
+OBJ	Makefile	/^OBJ := $(addsuffix .o,$(FILENAMES))$/;"	m
+OFLAGS	Makefile	/^OFLAGS := $(CFLAGS) $(HEADERFLAGS)$/;"	m
+a	ft_mlx.h	/^	a = 97,$/;"	e	enum:e_keycodes
+addr	ft_mlx.h	/^	void	*addr;$/;"	m	struct:s_img
+bits_per_pixel	ft_mlx.h	/^	int		bits_per_pixel;$/;"	m	struct:s_img
+d	ft_mlx.h	/^	d = 100,$/;"	e	enum:e_keycodes
+down	ft_mlx.h	/^	down = 65364,$/;"	e	enum:e_keycodes
+e_keycodes	ft_mlx.h	/^enum e_keycodes {$/;"	g
+endian	ft_mlx.h	/^	int		endian;$/;"	m	struct:s_img
+esc	ft_mlx.h	/^	esc = 65307$/;"	e	enum:e_keycodes
+ft_mlx_build_color	main.c	/^int		ft_mlx_build_color(int r, int g, int b)$/;"	f
+ft_mlx_create_image	ft_mlx_image.c	/^int		ft_mlx_create_image(t_vars *vars)$/;"	f
+ft_mlx_exit	ft_mlx_input.c	/^void	ft_mlx_exit(t_vars *vars)$/;"	f
+ft_mlx_fill	ft_mlx_image.c	/^void	ft_mlx_fill(void *mlx, int x, int y, int color)$/;"	f
+ft_mlx_handle_key_input	main.c	/^int		ft_mlx_handle_key_input(int keycode, t_vars *vars)$/;"	f
+ft_mlx_handle_move	ft_mlx_input.c	/^void	ft_mlx_handle_move(int keycode, t_vars *vars)$/;"	f
+ft_mlx_handle_rotation	ft_mlx_input.c	/^void	ft_mlx_handle_rotation(int keycode, t_vars *vars)$/;"	f
+ft_mlx_image_pixel_put	ft_mlx_image.c	/^void	ft_mlx_image_pixel_put(t_img *img, int x, int y, int color)$/;"	f
+height	ft_mlx.h	/^	int			height;$/;"	m	struct:s_vars
+i	ft_mlx.h	/^	i = 105,$/;"	e	enum:e_keycodes
+img	ft_mlx.h	/^	t_img		img;$/;"	m	struct:s_vars
+img	ft_mlx.h	/^	void	*img;$/;"	m	struct:s_img
+j	ft_mlx.h	/^	j = 106,$/;"	e	enum:e_keycodes
+k	ft_mlx.h	/^	k = 107,$/;"	e	enum:e_keycodes
+l	ft_mlx.h	/^	l = 108,$/;"	e	enum:e_keycodes
+left	ft_mlx.h	/^	left = 65361,$/;"	e	enum:e_keycodes
+main	main.c	/^int		main()$/;"	f
+mlx	ft_mlx.h	/^	void		*mlx;$/;"	m	struct:s_vars
+right	ft_mlx.h	/^	right = 65363,$/;"	e	enum:e_keycodes
+s	ft_mlx.h	/^	s = 115,$/;"	e	enum:e_keycodes
+s_img	ft_mlx.h	/^typedef struct	s_img {$/;"	s
+s_vars	ft_mlx.h	/^typedef struct	s_vars {$/;"	s
+size_line	ft_mlx.h	/^	int		size_line;$/;"	m	struct:s_img
+t_img	ft_mlx.h	/^}				t_img;$/;"	t	typeref:struct:s_img
+t_vars	ft_mlx.h	/^}				t_vars;$/;"	t	typeref:struct:s_vars
+up	ft_mlx.h	/^	up = 65362,$/;"	e	enum:e_keycodes
+w	ft_mlx.h	/^	w = 119,$/;"	e	enum:e_keycodes
+width	ft_mlx.h	/^	int			width;$/;"	m	struct:s_vars
+win	ft_mlx.h	/^	void		*win;$/;"	m	struct:s_vars
